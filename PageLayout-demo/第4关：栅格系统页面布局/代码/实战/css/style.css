@@ -1,0 +1,191 @@
+ul,li{
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    height: 60px;
+    /*border:1px solid blue;*/
+    border-bottom:1px solid rgba(255,255,255,.5);
+}
+.header>section{
+    /*border:1px solid green;*/
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+}
+.banner{
+    /*border:1px solid red;*/
+    height:560px;
+    position: relative;
+    top:-60px;
+    left:0px;
+    background: url("./img/java01.jpg") center no-repeat;
+    background-size:cover;
+    z-index: -1;
+}
+.header>section:first-child>img{
+    height: 50px;
+}
+.header>section:nth-child(2)>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header>section:nth-child(2)>ul>li>a{
+    color:#fff;
+    font-weight: bold;
+}
+.header>section:nth-child(3)>ul>li>a{
+    color:#fff;
+    font-weight: bold;
+}
+.header>section:first-child{
+    text-align: left;
+}
+.header>section:last-child{
+    text-align: right;
+}
+.header>section:last-child>i{
+    color:#fff;
+}
+
+/*内容区域样式*/
+.content{
+    text-align: center;
+}
+.content>section{
+    margin-bottom: 20px;
+}
+.content>section:first-child>div{
+    font-size:2em;
+    font-weight:bold;
+    background: url("./img/javatit7.png") no-repeat center;
+}
+.content>section:first-child>p{
+    font-size:2ex;
+    padding: 20px 0px;
+}
+
+.content>section:nth-child(2)>section{
+    /*border:1px solid blue;*/
+}
+.content>section:nth-child(2)>section>section>img{
+    width:100%;
+    border-radius: 10px 10px 0px 0px ;
+}
+.content>section:nth-child(2)>section>section>section>h6{
+    background: #234391;
+    color:#fff;
+    font-size: 2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.content>section:nth-child(2)>section>section>section>ul{
+    /*border:1px solid red;*/
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.content>section:nth-child(2)>section>section>section>ul>li{
+    text-align: left;
+    padding: 5px 0px;
+    padding-left:40px;
+    background: url("https://cdn2.lmonkey.com/site/img/theme/light/teachers_ico.png") no-repeat left center;
+    font-size: 18px;
+    color:#8492a6;
+}
+.content>section:nth-child(2)>section>section>section:last-child{
+    /*border:1px solid red;*/
+    font-size: 14px;
+    color:#8492a6;
+    text-align: left;
+    padding: 10px 20px;
+    text-indent: 2em;
+}
+.content>section:nth-child(2)>section>section{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.content>section:nth-child(2)>section>section:hover{
+    box-shadow:5px 5px 5px #ccc,-5px 0px 5px #ccc;
+    transform:translatey(-5px);
+}
+.content>section:last-child>a{
+    padding:15px 40px;
+    font-size:16px;
+    font-weight: bold;
+    color:#fff;
+    background: #234391;
+    border-radius: 10px;
+}
+/*底部样式*/
+footer{
+    margin-top: 40px;
+    height: 370px;
+    border-top:1px solid #f4f4f4;
+}
+footer>section:last-child{
+    text-align: center;
+}
+footer>section:first-child{
+    height: 350px;
+    /*border:1px solid blue;*/
+}
+footer>section:first-child>section>article{
+    /*border:1px solid red;*/
+    height:350px;
+}
+footer>section:first-child>section>article:first-child>img{
+    width: 30%;
+    position: relative;
+    top:0px;
+    padding-bottom: 20px;
+    padding-top:10px;
+    left:calc(50% - 30% / 2);
+}
+footer>section:first-child>section>article:first-child>p{
+    font-size:14px;
+    color:#8492a6;
+    text-indent: 2em;
+}
+footer>section:first-child>section>article:nth-child(2)>div>h6{
+    padding: 10px 0px;
+    border-bottom: 1px solid blue;
+    font-size:18px;
+    font-weight: bold;
+    color:#5e5e5e;
+}
+footer>section:first-child>section>article:nth-child(2)>div>ul>li{
+    text-align: center;
+    line-height: 30px;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.c-d-flex>img{
+    width:100px;
+    height:100px;
+}
+.c-d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        border-bottom:none;
+    }
+    .content>section:first-child>div{
+        font-size:1.5em;
+    }
+}
+@media screen and (max-width: 960px) {
+    footer>section:first-child>section>article:last-child{
+        height: 130px;
+    }
+}

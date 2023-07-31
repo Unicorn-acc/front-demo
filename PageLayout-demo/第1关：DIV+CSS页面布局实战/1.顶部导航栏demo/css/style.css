@@ -1,6 +1,8 @@
-body{
+body,img,ul,li,a,h6,p{
     padding: 0px;
     margin: 0px;
+    list-style: none;
+    text-decoration:none; /* 去掉下划线 */
 }
 #header{
     width: 100%;
@@ -17,9 +19,10 @@ body{
 }
 
 .header_left{
-    width: 200px;
+    width: 250px;
     height: 40px;
     float: left;
+    border:1px solid green;
 }
 
 .header_right{
@@ -32,7 +35,7 @@ body{
 /*头部左侧 内容区域*/
 .header_left>div:first-child{
     float:left;
-    /*border:1px solid blue;*/
+    border:1px solid blue;
     padding: 8px 10px 8px 0px;
     color:#8492A6;
 }
@@ -41,3 +44,25 @@ body{
     font-weight: bold;
 }
 
+.header_left>div:last-child{
+    float:right;
+    border:1px solid blue;
+    padding: 8px 10px 8px 0px;
+    /*position: relative;*/
+}
+
+.header_left>div:nth-child(2)>a>img{
+    width:18px;
+    float:left;
+    border:1px solid blue;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.header_left>div:last-child>a>i{
+    font-weight: bold;
+}
+.header_left>div:last-child>a{
+    color:#8492A6;
+    font-size:14px;
+}
